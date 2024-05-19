@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <fieldset class="m-5 col-sm-3">
+      <form>
+          <div class="mb-3">
+              <label for="subject" class="form-label">Subject</label>
+              <input type="text" class="form-control" id="subject">
+          </div>
+          <div class="form-check">
+              <input class="form-check-input" value="High" type="radio" name="priority" id="pHigh">
+              <label class="form-check-label" for="priority">High</label>
+          </div>
+          <div class="form-check">
+              <input class="form-check-input" value="Normal" type="radio" name="priority" id="pNormal">
+              <label class="form-check-label" for="priority">Normal</label>
+          </div>
+          <div class="form-check">
+              <input class="form-check-input" value="Low" type="radio" name="priority" id="pLow">
+              <label class="form-check-label" for="priority">Low</label>
+          </div>
+          <div class="mb-3 mt-3">
+              <label for="exampleInputPassword1" class="form-label">Due Date</label>
+              <input type="date" class="form-control" id="date" required>
+          </div>
+          <button type="submit" id="create" class="btn btn-primary">Add Subject</button>
+      </form>
+    </fieldset>
+    <table class="table m-sm-5 container">
+        <thead class="bg-light">
+          <tr>
+            <th></th>
+            <th>Subject</th>
+            <th>Priority</th>
+            <th>Due Date</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="rows">
+        </tbody>
+      </table>
+      <script src="app.js"></script>
+</body>
+</html>
